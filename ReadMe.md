@@ -10,7 +10,7 @@
 2. venv\Scripts\activate    
 3. run python manage.py runserver
 
-> Note: To test the email verification feature you need to add your own HOST_USER and HOST_PASWORD in authenticaion/settings.py
+> Note: To test the email verification feature you need to add your own HOST_USER and HOST_PASSWORD in authenticaion/settings.py
 
 EMAIL_HOST='smtp-relay.sendinblue.com'   
 EMAIL_PORT = 587    
