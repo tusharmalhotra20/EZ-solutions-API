@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "85f9c6a7-1a05-4bd0-8198-d194c3fc2227",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17168750"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE URL}}/",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "batman18",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "dwayne",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "jhonson",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tusharmalhotra494@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE URL}}/auth/register",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE URL}}/auth/login",
+					"host": [
+						"{{BASE URL}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
